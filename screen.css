@@ -12,6 +12,10 @@ header {
   padding: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   color: white;
   display: flex;
@@ -27,6 +31,12 @@ h3 {
 }
 
 h4 {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+#intro-exp {
   color: black;
   display: flex;
   justify-content: center;
@@ -122,24 +132,41 @@ footer {
 
 }
 
-/* Skills Section */
-.skills-container {
+/* Skill Cards Container */
+.skill-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 20px; 
   justify-content: center;
 }
 
 .skill-card {
-  background: #f9f9f9;
+  background-color: #fff;
   border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
+  padding: 20px;
   width: 250px;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Section */
+.skill-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Hover Effect */
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* contact CSS */
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
