@@ -20,6 +20,8 @@ h1 {
   color: white;
   display: flex;
   justify-content: center;
+  border-bottom: 10px dotted rgb(176, 204, 255);
+  padding-bottom: 10px;
 }
 
 h2 {
@@ -112,16 +114,15 @@ footer {
 }
 
 .left-section {
-  width: 50%;
   padding: 20px;
   display: flex;
 }
 
 .right-section {
-  width: 50%;
   padding: 20px;
   display: flex;
 }
+
 /* Hero Section */
 .hero {
   text-align: left;
@@ -132,12 +133,16 @@ footer {
 
 }
 
-/* Skill Cards Container */
+/* skills CSS */
 .skill-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 20px; 
   justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 3rem;
+  border-bottom: 4px dashed black;
+
 }
 
 .skill-card {
@@ -148,6 +153,7 @@ footer {
   width: 250px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
 }
 
 .skill-card h3 {
@@ -160,10 +166,35 @@ footer {
   font-size: 14px;
 }
 
-/* Hover Effect */
 .skill-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.edu-li{
+  padding-bottom: 1rem;
+  padding-right: 20rem;
+}
+
+.experience-flexbox{
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.experience-flexbox div {
+  width: 40%;
+  background: green;
+  height: 30%;
+}
+.flexbox .left, .flexbox .right{
+  height: 45%;
 }
 
 /* contact CSS */
