@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -16,6 +16,11 @@ a {
   text-decoration: none;
 }
 
+a.netlify-link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 h1 {
   color: white;
   display: flex;
@@ -25,6 +30,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'Courier New', Courier, monospace;
   color: #86aeff;
 }
 
@@ -43,6 +49,7 @@ h4 {
   display: flex;
   justify-content: center;
 }
+
 
 nav ul {
   list-style: none;
@@ -94,33 +101,40 @@ footer {
 }
 
 .btn {
-  background: #E2BA35;
+  background: #517bcf;
   color: white;
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
-  transition: background 0.3s;
 }
 
 .btn:hover {
-  background: #E2BA35;
+  background: #86aeff;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.img-card {
+  float: right;
+  height: auto+40px;
+  width: 280px;
+  margin: 0 0 10px 10px;
+  background-color: #b6d5e5;
+  padding: 10px;
+  border-top: 1px solid #999;
+  border-right: 2px solid #555;
+  border-bottom: 2px solid #555;
+  border-left: 1px solid #999;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.swe-sub {
+  color: red;
 }
 
 .left-section {
+  float: right;
   padding: 20px;
-  display: flex;
-}
-
-.right-section {
-  padding: 20px;
-  display: flex;
 }
 
 /* Hero Section */
@@ -180,22 +194,25 @@ footer {
   padding-right: 20rem;
 }
 
-.experience-flexbox{
-  height: 500px;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
+h3.job-title {
+  font-family:'Courier New', Courier, monospace;
+  color: #1F3B73;
+  padding-top: 2rem;
 }
-.experience-flexbox div {
-  width: 40%;
-  background: green;
-  height: 30%;
+
+p.job-desc {
+  padding-right: 20rem;
 }
-.flexbox .left, .flexbox .right{
-  height: 45%;
+
+.projects-list{
+  padding-bottom: 1rem;
+  padding-right: 20rem;
 }
+
+.proj-link {
+  font-weight: bold;
+}
+
 
 /* contact CSS */
 .contact-form {
