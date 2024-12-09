@@ -139,12 +139,9 @@ footer {
   border-right: 2px solid #555;
   border-bottom: 2px solid #555;
   border-left: 1px solid #999;
+  border-radius: 10px;
 }
 
-
-.swe-sub {
-  color: red;
-}
 
 .left-section {
   float: right;
